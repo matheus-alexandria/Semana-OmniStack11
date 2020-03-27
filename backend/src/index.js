@@ -4,7 +4,7 @@ const routes = require('./routes');
 
 const app = express();
 
-app.use(cors()); // Eventualmente criar url poderá acessar o site, com o comando origin
+app.use(cors()); // Limita qual url vai acessar
 app.use(express.json());
 app.use(routes);
 
